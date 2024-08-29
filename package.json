@@ -1,0 +1,19 @@
+{
+    "name": "netflix-competitor",
+    "version": "1.0.0",
+    "auther": "Farooq",
+    "main": "server.js",
+    "scripts": {
+      "start": "node src/server.js",
+      "test": "jest"
+    },
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^7.0.4"
+    },
+    "devDependencies": {
+      "jest": "^29.0.0",
+      "supertest": "^6.0.0"
+    }
+  }
+  

@@ -10,7 +10,7 @@ app.use('/genres', genresRouter);
 app.use('/movies', moviesRouter);
 app.use('/', homeRouter);
 
-mongoose.connect('mongodb://127.0.0.1:27017/netflix_competitor', {
+mongoose.connect(process.env.DATABASE_URL|| 'mongodb://netflix_lightpond:e54d96ec76d86f657f2fd22cddb0f81ed277d0df@u1z.h.filess.io:27017/netflix_lightpond', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {

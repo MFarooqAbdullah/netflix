@@ -2,11 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const genresRouter = require('./routes/genres');
 const moviesRouter = require('./routes/movies');
+const homeRouter = require('./routes/home');
 
 const app = express();
 app.use(express.json());
 app.use('/genres', genresRouter);
 app.use('/movies', moviesRouter);
+app.use('/', homeRouter);
 
 mongoose.connect('mongodb://127.0.0.1:27017/netflix_competitor', {
   useNewUrlParser: true,
